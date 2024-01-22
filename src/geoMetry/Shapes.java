@@ -8,7 +8,7 @@ public abstract class Shapes {
 	double circumference;
 	double area;
 	
-	public abstract double calculateCircumferenece();
+	public abstract double calculateCircumference();
 	public abstract double calculateArea();
 	
 	public ArrayList<Shapes> getShapes() {
