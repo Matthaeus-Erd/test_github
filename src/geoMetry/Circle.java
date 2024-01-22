@@ -43,7 +43,7 @@ public class Circle extends Shapes{
 	}
 	
 	@Override
-	public double calculateCircumferenece() {
+	public double calculateCircumference() {
 		radius = this.calculateRadius(this.getMiddle(), this.getRadiusPoint());
 		double circumference = radius *2 *Math.PI;
 		return circumference;
