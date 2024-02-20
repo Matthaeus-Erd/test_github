@@ -7,10 +7,17 @@ public abstract class Shapes {
 	private ArrayList<Shapes> shapes;
 	double circumference;
 	double area;
+	String shapeName;
 	
 	public abstract double calculateCircumference();
 	public abstract double calculateArea();
 	
+	public String getShapeName() {
+		return shapeName;
+	}
+	public void setShapeName(String shapeName) {
+		this.shapeName = shapeName;
+	}
 	public ArrayList<Shapes> getShapes() {
 		return shapes;
 	}
