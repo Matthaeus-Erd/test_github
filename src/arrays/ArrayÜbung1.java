@@ -2,11 +2,18 @@ package arrays;
 
 public class ArrayÜbung1 {
 
-	int[] dailyGains = { 1000, 2000, 500, 9000, 9010 };
+	int day;
+	int nextday;
+	int percentjump;
+	int[]dailyGains = new int[31];
+	
 	
 	int count5PercentJumps(int[]gains) {
-		int Umsatzsprünge = 0;
-		if()
+		for(int i = 0; i < dailyGains.length; i++) {
+			day = dailyGains[i];
+			nextday = dailyGains[i+1];
+			
+		}
 	}
 	
 }
