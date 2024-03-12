@@ -54,6 +54,7 @@ public class MusicalChairs {
                 this.rotateAndRemove(distance);
             }
         }
-
     }
+	
+	
 }
