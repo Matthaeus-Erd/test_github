@@ -12,30 +12,30 @@ public class UPNTaschenrechner {
 	                double zahl = Double.parseDouble(token);
 	                stack.push(zahl);
 	            } else {
-	                double operand2 = stack.pop();
-	                double operand1 = stack.pop();
+	                double zahl2 = stack.pop();
+	                double zahl1 = stack.pop();
 	                double ergebnis = 0;
 	                switch (token) {
-	                    case "+":
-	                        ergebnis = operand1 + operand2;
-	                        break;
-	                    case "-":
-	                        ergebnis = operand1 - operand2;
-	                        break;
+	                	case "+":
+	                    	ergebnis = zahl1 + zahl2;
+	                    	break;
+	                	case "-":
+	                    	ergebnis = zahl1 - zahl2;
+	                    	break;
 	                    case "*":
-	                        ergebnis = operand1 * operand2;
+	                        ergebnis = zahl1 * zahl2;
 	                        break;
 	                    case "/":
-	                        ergebnis = operand1 / operand2;
+	                        ergebnis = zahl1 / zahl2;
 	                        break;
 	                    default:
-	                        throw new IllegalArgumentException("Ungültiger Operator: " + token);
+	                        System.err.println("Ungültige Zahl: " + token);
 	                }
 	                stack.push(ergebnis);
 	            }
 	        }
 	        return stack.pop();
-	    }
+	   }
 	    
 	    private static boolean istZahl(String str) {
 	        if (str.length() == 0 || (str.length() > 1 && str.charAt(0) == '-')) {
