@@ -50,7 +50,7 @@ public class UPNTaschenrechner {
 	    }
 	    
 	    public static void main(String[] args) {
-	        String ausdruck = "12 34 23 + *";
+	        String ausdruck = "5 3 +";
 	        System.out.println("Ergebnis: " + berechne(ausdruck));
 	    }
 	}

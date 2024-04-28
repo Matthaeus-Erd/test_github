@@ -32,7 +32,7 @@ public class KorrekteKlammern {
     }
     
     public static void main(String[] args) {
-        String ausdruck = "(a + b) * (c - d)";
+        String ausdruck = "({[]})";
         System.out.println("Ausdruck: " + korrekteKlammerung(ausdruck));
     }
 }
