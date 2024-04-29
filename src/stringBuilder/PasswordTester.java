@@ -3,7 +3,7 @@ package stringBuilder;
 public class PasswordTester {
 
 	public static boolean istSonderzeichen(char zeichen) {
-		return Character.isLetterOrDigit(zeichen);
+		return !Character.isLetterOrDigit(zeichen);
 	}
 	
 	public static boolean isGoodPassword(String password) {
@@ -16,15 +16,17 @@ public class PasswordTester {
 			if(istSonderzeichen(zeichen)) {
 				System.err.println("Passwort neu wählen(Braucht ein Sonderzeichen)");
 				return false;
+			}else {
+				System.out.println("Passwort ist Gut");
+				return true;
 			}
 		}
-		System.out.println("Passwort ist Gut");
 		return true;
 	}
 	
 	public static void main(String[] args) {
 		
-		String password = "abcdabcd";
+		String password = "abcdabab";
 		System.out.println(isGoodPassword(password));
 
 	}
