@@ -8,7 +8,7 @@ import java.util.Scanner;
 	public class MusikNotenLeser {
 	 
 		public static void main(String[] args) {
-			Path filePath = Paths.get("file.txt");
+			Path filePath = Paths.get("Noten.txt");
 	 
 	        try (Scanner scanner = new Scanner(filePath)) {
 	            while (scanner.hasNextLine()) {
